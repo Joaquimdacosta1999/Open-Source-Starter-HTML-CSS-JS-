@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Open Source Starter (HTML/CSS/JS)</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="container">
+    <h1>Open Source Starter</h1>
+    <p class="tagline">A simple vanilla JS project you can grow with contributions.</p>
+    <nav>
+      <a href="#todos">Todos</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="todos" class="card">
+      <h2>Todo List</h2>
+      <form id="todo-form" autocomplete="off">
+        <label for="todo-input">Add a task</label>
+        <div class="row">
+          <input id="todo-input" name="title" placeholder="e.g. Read contributing guide" required>
+          <button type="submit">Add</button>
+        </div>
+      </form>
+
+      <ul id="todo-list" class="todos"></ul>
+
+      <div class="row">
+        <button id="clear-completed" class="secondary">Clear completed</button>
+        <span id="todo-count" class="muted"></span>
+      </div>
+    </section>
+
+    <section id="about" class="card">
+      <h2>About</h2>
+      <p>Built with plain HTML, CSS, and JavaScript. Fork this repo, create branches, and open pull requests to practice contributing.</p>
+    </section>
+  </main>
+
+  <footer class="container">
+    <small>MIT License. &copy; 2025</small>
+  </footer>
+
+  <noscript>This site needs JavaScript enabled.</noscript>
+  <script defer src="./app.js"></script>
+</body>
+</html>
+
+

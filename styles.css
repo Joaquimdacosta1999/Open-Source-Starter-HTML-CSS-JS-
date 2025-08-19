@@ -1,0 +1,96 @@
+:root {
+  --bg: #0b0d10;
+  --panel: #12151a;
+  --text: #e7ecf3;
+  --muted: #a8b3c2;
+  --primary: #4f8cff;
+  --primary-900: #2a6fff;
+  --border: #1f2430;
+  --success: #4ade80;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  color: var(--text);
+  background: radial-gradient(1000px 500px at 10% -10%, #1a2030, transparent), var(--bg);
+}
+
+.container {
+  width: min(960px, 92%);
+  margin: 0 auto;
+}
+
+header {
+  padding: 28px 0 8px;
+}
+
+header h1 {
+  margin: 0 0 6px 0;
+  font-size: 28px;
+}
+
+.tagline { color: var(--muted); margin: 0 0 12px 0; }
+
+nav a {
+  color: var(--muted);
+  margin-right: 14px;
+  text-decoration: none;
+}
+nav a:hover { color: var(--text); }
+
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 18px;
+  margin: 14px 0;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.row { display: flex; gap: 10px; align-items: center; }
+
+input[type="text"], input:not([type]) {
+  flex: 1;
+  background: #0e1116;
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+
+button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 16px;
+  cursor: pointer;
+}
+button:hover { background: var(--primary-900); }
+button.secondary { background: #2b3340; }
+button.secondary:hover { background: #364052; }
+
+.todos { list-style: none; padding: 0; margin: 12px 0; }
+.todos li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  background: #0e1116;
+  border-radius: 10px;
+}
+.todos li + li { margin-top: 8px; }
+.todos li.completed .title { text-decoration: line-through; color: var(--muted); }
+.todos .spacer { flex: 1; }
+.todos .destroy { background: #3a4354; }
+.todos .destroy:hover { background: #4a566e; }
+
+.muted { color: var(--muted); }
+
+footer { padding: 30px 0 60px; text-align: center; color: var(--muted); }
+
+
