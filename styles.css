@@ -9,6 +9,17 @@
   --success: #4ade80;
 }
 
+/* Light theme overrides */
+:root.light-theme {
+  --bg: #f7f8fa;
+  --panel: #ffffff;
+  --text: #0b0d10;
+  --muted: #4b5563;
+  --primary: #2563eb;
+  --primary-900: #1e40af;
+  --border: #e5e7eb;
+}
+
 * { box-sizing: border-box; }
 html, body { height: 100%; }
 body {
@@ -40,6 +51,9 @@ nav a {
   text-decoration: none;
 }
 nav a:hover { color: var(--text); }
+
+/* User preference: all links bold, per site preference */
+nav a, a { font-weight: 700; }
 
 .card {
   background: var(--panel);
@@ -73,6 +87,15 @@ button:hover { background: var(--primary-900); }
 button.secondary { background: #2b3340; }
 button.secondary:hover { background: #364052; }
 
+/* Theme toggle specific style */
+.theme-toggle {
+  background: transparent;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  padding: 8px 12px;
+}
+.theme-toggle:hover { color: var(--text); }
+
 .todos { list-style: none; padding: 0; margin: 12px 0; }
 .todos li {
   display: flex;
@@ -88,6 +111,9 @@ button.secondary:hover { background: #364052; }
 .todos .spacer { flex: 1; }
 .todos .destroy { background: #3a4354; }
 .todos .destroy:hover { background: #4a566e; }
+
+/* Light theme list background to match panel */
+.light-theme .todos li { background: var(--panel); }
 
 .muted { color: var(--muted); }
 
