@@ -13,6 +13,7 @@
     <nav>
       <a href="#todos">Todos</a>
       <a href="#about">About</a>
+      <button id="theme-toggle" class="theme-toggle" aria-pressed="true" aria-label="Toggle dark or light theme">Theme</button>
     </nav>
   </header>
 
@@ -23,6 +24,12 @@
         <label for="todo-input">Add a task</label>
         <div class="row">
           <input id="todo-input" name="title" placeholder="e.g. Read contributing guide" required>
+          <select id="todo-category" name="category">
+            <option value="General">General</option>
+            <option value="Work">Work</option>
+            <option value="Personal">Personal</option>
+            <option value="Learning">Learning</option>
+          </select>
           <button type="submit">Add</button>
         </div>
       </form>
