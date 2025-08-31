@@ -1,6 +1,6 @@
 # Open Source Starter (HTML/CSS/JS)
 
-A beginner-friendly, pure HTML/CSS/JavaScript project you can extend over time. Use this to practice forking, branching, making changes, and opening pull requests.
+A simple and interactive To-Do List application that allows users to manage daily tasks efficiently. Built using HTML for structure, CSS for styling, and JavaScript for dynamic functionality, the app supports:
 
 ## Quick start
 
@@ -46,4 +46,5 @@ Here are the Link to clone
 ## License
 
 MIT — see `LICENSE`.
+
 
